@@ -6,6 +6,7 @@ import { useState } from 'react';
 const SignUp = () => {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
+  const [petName, setPetName]= useState('')
 
   return (  
     <View style={{justifyContent: 'center', backgroundColor: '#ecf0f1'}}>
@@ -26,8 +27,9 @@ const SignUp = () => {
       <InputField 
       label= 'Pets Name'
       placeHolder= "Tell us your furry friends name"
-      value=''
-      onChangeText={() => {}}
+      value={petName}
+      onChangeText={setPetName}
+      secureTextEntry={false}
       />
       <InputField 
       label= 'pets date of birth'
