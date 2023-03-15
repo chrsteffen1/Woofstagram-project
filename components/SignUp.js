@@ -1,15 +1,17 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import InputField from './InputField';
+import { useState } from 'react';
 
 const SignUp = () => {
+  const [email, setEmail]= useState('')
   return (  
     <View style={{justifyContent: 'center', backgroundColor: '#ecf0f1'}}>
       <InputField 
       label= 'email'
       placeHolder= "Enter your email"
-      value=''
-      onChangeText={() => {}}
+      value={email}
+      onChangeText={setEmail}
       />
       <InputField 
       label= 'password'
