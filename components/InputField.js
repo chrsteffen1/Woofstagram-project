@@ -5,7 +5,7 @@ const InputField = ({label, placeHolder, value, onChangeText, secureTextEntry= f
   return (  
     <>
     <View>
-      <Text>
+      <Text style={{padding: 8, fontSize: 18}}>
         {label}
       </Text>
       <TextInput 
@@ -14,6 +14,7 @@ const InputField = ({label, placeHolder, value, onChangeText, secureTextEntry= f
       onChangeText={onChangeText}
       secureTextEntry={secureTextEntry}
       onSubmitEditing={onSubmitEditing}
+      style={{padding: 8, fontSize: 18}}
       />
     </View>
     </>
