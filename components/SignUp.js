@@ -15,7 +15,6 @@ const SignUp = () => {
       placeHolder= "Enter your email"
       value={email}
       onChangeText={setEmail}
-      secureTextEntry={false}
       />
       <InputField 
       label= 'password'
@@ -29,7 +28,6 @@ const SignUp = () => {
       placeHolder= "Tell us your furry friends name"
       value={petName}
       onChangeText={setPetName}
-      secureTextEntry={false}
       />
       <InputField 
       label= 'pets date of birth'
