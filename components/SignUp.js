@@ -1,10 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import InputField from './InputField';
 import { useState } from 'react';
 
 const SignUp = () => {
   const [email, setEmail]= useState('')
+  const [password, setPassword]= useState('')
+
   return (  
     <View style={{justifyContent: 'center', backgroundColor: '#ecf0f1'}}>
       <InputField 
@@ -12,12 +14,13 @@ const SignUp = () => {
       placeHolder= "Enter your email"
       value={email}
       onChangeText={setEmail}
+      secureTextEntry={false}
       />
       <InputField 
       label= 'password'
       placeHolder= "Make a password"
-      value=''
-      onChangeText={() => {}}
+      value={password}
+      onChangeText={setPassword}
       secureTextEntry={true}
       />
       <InputField 
