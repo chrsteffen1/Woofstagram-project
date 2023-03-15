@@ -21,7 +21,7 @@ const SignUp = () => {
 
 
   return (  
-    <View style={{justifyContent: 'center', backgroundColor: '#ecf0f1', padding: 16}}>
+    <View style={{justifyContent: 'center', backgroundColor: '#ecf0f1'}}>
       <InputField 
       label= 'email'
       placeHolder= "Enter your email"
