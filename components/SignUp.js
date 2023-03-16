@@ -1,18 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import InputField from './InputField';
-import { useState } from 'react';
 import {Formik} from 'formik'
 
 const SignUp = () => {
-  const [email, setEmail]= useState('')
-  const [password, setPassword]= useState('')
-  const [confirmPassword, setConfirmPassword]= useState('')
-  const [petName, setPetName]= useState('')
-  const [dob, setDob]= useState('')
-  const [breed, setBreed]= useState('')
-  const [toy, setToy]= useState('')
-
   function onSubmit(values) {
     if(values.password !==values.confirmPassword){
       alert("Passwords do not match")
@@ -28,7 +19,7 @@ const SignUp = () => {
       email: '',
       password: '',
       confirmPassword: '',
-      name: '',
+      petName: '',
       dob: '',
       breed: '',
       toy: '',
@@ -62,7 +53,7 @@ const SignUp = () => {
         label= 'Pets Name'
         placeHolder= "Tell us your furry friends name"
         value={values.petName}
-        onChangeText={handleChange(petName)}
+        onChangeText={handleChange('petName')}
         />
         <InputField 
         label= 'pets date of birth'

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, ScrollView } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import SignUp from './components/SignUp';
 
 export default function App() {
