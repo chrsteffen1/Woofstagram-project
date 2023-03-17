@@ -1,12 +1,14 @@
 import React from "react";
-import {Text, StyleSheet} from 'react-native'
+import {Text, StyleSheet,View} from 'react-native'
 
 const Title = () => {
   return (  
-    <Text style={StyleSheet.title}>
-      {props.children}
-    </Text>
+    <View>
+      <Text style={StyleSheet.title}>
+        {props.children}
+      </Text>
+    </View>
   );
 }
- 
+
 export default Title;
