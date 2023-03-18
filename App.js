@@ -27,7 +27,7 @@ import { Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-n
 const Avatar = (props) => (
   <Image
     style={styles.avatar}
-    source={{ uri: props.url }}
+    source={{ uri: 'https://picsum.photos/64/64' }}
   />
 );
 
@@ -47,14 +47,21 @@ const styles = StyleSheet.create({
   avatar: {
     borderRadius: '50%',
     width: 64,
-    heigth: 64
+    height: 64
   },
   heading: {
     fontSize: 20,
-    fontWeight: '600'
+    fontWeight: '600',
+    paddingTop: 20,
+    paddingBottom: 12,
+    paddingHorizontal: 24,
+    color: '#08060b'
   },
   title: {
-    fontSize:18
+    fontSize:12,
+    color: '#280D5F',
+    fontWeight: "600",
+    textTransform: 'uppercase'
   },
 });
 

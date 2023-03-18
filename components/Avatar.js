@@ -13,11 +13,9 @@ const Avatar = (props) => {
 
 const styles = StyleSheet.create({
   avatar: {
-    flex:1,
-    backgroundColor: '#fff',
-    width: 100,
-    height: 100,
-    borderRadius: 10,
+    borderRadius: '50%',
+    height: 64,
+    width: 64,
   },
 });
 
