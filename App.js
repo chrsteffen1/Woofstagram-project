@@ -45,14 +45,13 @@ const Title = (props) => (
 
 const styles = StyleSheet.create({
   avatar: {
-    borderRadius: 10,
-    backgroundColor: 'blue',
-    flex:1,
-    width: 20,
-    heigth: 20
+    borderRadius: '50%',
+    width: 64,
+    heigth: 64
   },
   heading: {
-    fontSize: 24
+    fontSize: 20,
+    fontWeight: '600'
   },
   title: {
     fontSize:18
@@ -69,7 +68,10 @@ const WoofCard = (props) => (
 );
 
 const woofCardStyles = StyleSheet.create({
-  card: {},
+  card: {
+    backgroundColor: "grey",
+    borderRadius: 15,
+  },
   title: {},
 });
 
